@@ -6,7 +6,7 @@ This repo contains the code for learning an RL policy in [IsaacGym](https://gith
 2. ```code```: contains the IsaacGym environment and the the task specification/PPO parameters
 
 ## How to start the learning
-1. Download [IsaacGym](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs
+1. Download [IsaacGym](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs)
 
 2. Copy the URDF file contained in the assets folder in IsaacGymEnvs/assets
 
