@@ -8,13 +8,13 @@ This repo contains the code for learning an RL policy in [IsaacGym](https://gith
 ## How to start the learning
 1. Download [IsaacGym](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs
 
-2. Copy the URDF in the assets folder in IsaacGymEnvs/assets
+2. Copy the URDF file contained in the assets folder in IsaacGymEnvs/assets
 
-3. Copy the ```Twip.yaml``` in the folder in IsaacGymEnvs/isaacgymenvs/cfg/task
+3. Copy ```Twip.yaml``` in the folder in IsaacGymEnvs/isaacgymenvs/cfg/task
 
-4. Copy the ```TwipPPO.yaml``` in the folder in IsaacGymEnvs/isaacgymenvs/cfg/train
+4. Copy ```TwipPPO.yaml``` in the folder in IsaacGymEnvs/isaacgymenvs/cfg/train
 
-5. Copy the ```twip.py``` in the assets folder in IsaacGymEnvs/isaacgymenvs/task
+5. Copy ```twip.py``` in the assets folder in IsaacGymEnvs/isaacgymenvs/task
 
 6. run ```python train.py task=Twip```
 
