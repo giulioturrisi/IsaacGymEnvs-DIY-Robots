@@ -1,5 +1,5 @@
 ## Overview
-This repo contains the code for learning an RL policy in [IsaacGym](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs) for a two wheeled inverted pendulum (TWIP) robot. It includes the following folders and subfolders:
+This repo contains the code for learning an RL policy in [IsaacGym](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs) for a two wheeled inverted pendulum (TWIP) and a Flywheel inverted pendulum robots. It includes the following folders and subfolders:
 
 1. ```assets```: contains the URDF file of the robot
 
@@ -10,11 +10,24 @@ This repo contains the code for learning an RL policy in [IsaacGym](https://gith
 
 2. Copy the URDF file contained in the assets folder in IsaacGymEnvs/assets
 
-3. Copy ```Twip.yaml``` in the folder in IsaacGymEnvs/isaacgymenvs/cfg/task
+3. Copy ```Twip.yaml``` and ```FlywheelPendulum.yaml``` in the folder in IsaacGymEnvs/isaacgymenvs/cfg/task
 
-4. Copy ```TwipPPO.yaml``` in the folder in IsaacGymEnvs/isaacgymenvs/cfg/train
+4. Copy ```TwipPPO.yaml``` and ```FlywheelPendulumPPO.yaml``` in the folder in IsaacGymEnvs/isaacgymenvs/cfg/train
 
-5. Copy ```twip.py``` in the assets folder in IsaacGymEnvs/isaacgymenvs/task
+5. Copy ```twip.py``` and ```flywheel_pendulum.py```in the assets folder in IsaacGymEnvs/isaacgymenvs/task
 
-6. run ```python train.py task=Twip```
+6. Paste in IsaacGymEnvs/isaacgymenvs/tasks/__init__.py 
+```
+from .twip import Twip
+from .flywheel_pendulum import FlywheelPendulum
+
+....
+
+"Twip": Twip,
+"FlywheelPendulum": FlywheelPendulum,
+```
+
+7. run ```python train.py task=Twip``` or ```python train.py task=FlywheelPendulum```
+
+
 
